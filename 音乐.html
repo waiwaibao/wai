@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>音乐</title>
+<style type="text/css">
+.a{
+	position: absolute;
+	left: 723px;
+	top: 281px;
+	color: #F0F;
+	text-align: center;
+	height: 22px;
+}
+.b{
+	position: absolute;
+	left: 705px;
+	top: 625px;
+	color: #F0F;
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+<button type="submit" id="a" onclick="a();">
+<audio src="../source/张茜 - 桥边姑娘.mp3" controls="controls" preload id="music" hidden></audio>
+<img src="../image/桥边姑娘.png" width="500" height="347"/></button>
+</div>
+<div align="center">
+<button type="submit" id="p" onclick="p();">
+<audio src="../source/K.D - 雨后人去楼也空 (Live).mp3" controls="controls" preload id="abc" hidden></audio>
+<img src="../image/雨后人去楼也空.png" width="500" height="347"/></button>
+</div>
+<p class="a"><strong>桥边姑娘</strong></p>
+<p class="b"><strong>雨后人去楼也空</strong></p>
+<script>   
+
+   function a(){
+
+     var audio = document.getElementById('music'); 
+	
+     if(audio.paused){                 
+
+         audio.play();//audio.play();// 播放  
+
+     }
+
+     else{
+
+          audio.pause();// 暂停
+
+     } 
+
+   }
+   function p(){
+
+     
+	 var audio = document.getElementById('abc'); 
+
+     if(audio.paused){                 
+
+         audio.play();//audio.play();// 播放  
+
+     }
+
+     else{
+
+          audio.pause();// 暂停
+
+     } 
+
+   }
+
+</script>
+</body>
+</html>
